@@ -1,7 +1,7 @@
 package NivelIntermediario.Desafio3;
 
 public class Uchiha extends Ninja {
-    private String habilidadeEspecial = "Ativar o Sharingan";
+    String habilidadeEspecial = "Ativar o Sharingan";
 
     public void mostrarHabilidadeEspecial() {
         System.out.println("Minha habilidade especial é: " + habilidadeEspecial);
