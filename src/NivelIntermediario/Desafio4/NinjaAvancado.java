@@ -6,12 +6,18 @@ public class NinjaAvancado implements Ninja {
     int idade;
     String habilidade;
     String especialidade;
+    TipoHabilidade tipoHabilidade;
 
-    public NinjaAvancado(String nome, int idade, String habilidade, String especialidade) {
+    public NinjaAvancado(String nome, int idade, String habilidade, String especialidade, TipoHabilidade tipoHabilidade) {
         this.nome = nome;
         this.idade = idade;
         this.habilidade = habilidade;
         this.especialidade = especialidade;
+        this.tipoHabilidade = tipoHabilidade;
+    }
+
+    public void tipoDaHabilidade() {
+        System.out.println("O tipo da minha habilidade é: " + tipoHabilidade);
     }
 
     public void executarHabilidade() {
@@ -19,7 +25,7 @@ public class NinjaAvancado implements Ninja {
     };
 
     public void executarEspecialidade() {
-        System.out.println("Estou usando minha abilidade especial: " + especialidade );
+        System.out.println("Estou usando minha habilidade especial: " + especialidade );
     }
 
     public void mostrarInformacoes() {
